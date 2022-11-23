@@ -49,7 +49,7 @@ local function canrebirth()
 end
 
 local function ascend()
-    if (not canrebirth) then
+    if (not canrebirth()) then
         return
     end
 
