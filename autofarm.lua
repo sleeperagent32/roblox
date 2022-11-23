@@ -1,3 +1,13 @@
+do
+    if (not game.IsLoaded) then
+        game.Loaded:Wait()
+    end
+
+    if (game.CreatorId ~= 1137635) then
+        return
+    end
+end
+
 -- // variables
 local player = game:GetService("Players").LocalPlayer
 local replicatedstorage = game:GetService("ReplicatedStorage")
